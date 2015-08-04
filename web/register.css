@@ -1,0 +1,15 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Author     : c0655613
+*/
+
+label.error{
+float:none;
+color:red;
+font-size:87.5%;
+margin-left:10px;
+}

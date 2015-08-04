@@ -1,0 +1,147 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : July-29-2015, 7:34:02 AM
+    Author     : c0653541
+*/
+
+
+
+
+body
+{
+	font-family: sans-serif, Arial,verdana;
+	width: 800px;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid black;
+	background-color: #FFFFCC;
+	
+}
+
+header
+{
+	background: linear-gradient(45deg, white, skyblue 75%, black );
+	
+}
+header img
+{
+	float: left;
+	margin-left:10px;
+	margin-top: 10px;
+}
+header h1
+{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	font-size: 45px;
+	text-align:left;
+	text-indent:40px;
+	margin-top: 0px;
+	margin-bottom: -10px;
+	color:#009999;
+	text-shadow:2px 2px 2px yellow;
+
+}
+header h2
+{
+	text-align:left;
+	text-indent:175px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid black;
+	margin:10px 0 0;
+	font-family: 'Brush Script MT', cursive;
+	font-size:35px;
+	color:#FF5050;
+}
+nav
+{
+	clear: left;
+	margin: 0px;
+	padding: 0px;
+	border-bottom: 2px solid black;
+	
+}
+nav ul
+{
+	list-style: none;
+	margin:0px;
+	text-align: center;
+}
+nav li
+{
+	display: inline;
+	border-right: 1px solid black;
+	padding: 5px 20px;
+	
+}
+nav a.current
+{
+	text-decoration: none;
+}
+
+section
+{
+	padding: 1em;
+	margin-left:10px;
+}
+section h1
+{
+		margin-top: 5px;
+		margin-bottom: 5px;
+}
+section h1::first-letter
+{
+	font-size:200%;
+}
+section h2
+{
+	margin-top:0px;	
+	margin-bottom: 10px;
+}
+section h3
+{
+	margin-top:10px;
+	margin-bottom:0px;	
+}
+section a
+{
+	color: red;
+}
+.space
+{
+	margin-top: 10px;	
+}
+
+
+a:link
+{
+	font-weight: bold;
+	color:black;
+	line-height:170%;
+	
+}
+
+a:hover,a:focus
+{
+	color:green;
+}
+
+footer
+{	
+	font-size: 90%;
+	text-align:center;
+	border-top: 2px solid black;
+	background: linear-gradient(45deg, black, skyblue 75%, white );
+	clear: both;
+}
+footer p 
+{
+	margin: 0em;
+	padding-top:15px;
+	padding-bottom: 15px;
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <head>
+        <title>Registration Page</title>
+        <link rel="stylesheet" href="register.css"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="jquery.validate.min.js"></script>
+        <script>
+            $(document).ready(function() {
+
+                $("#name").focus();
+                $("#register_form").validate({
+                    rules: {
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        name: {
+                            required: true
+                        },
+                        password: {
+                            required: true,
+                            minlength: 3
+                        },
+                        password2: {
+                            required: true,
+                            equalTo: "#password"
+
+                        }
+                    },
+                  
+                    //            function getResult() {
+                    //            $('#result').html('');
+                    //                    $('#result').append("Registration Successful");
+                    //                    $('#name').val('success');
+                    //                    $('#email').val('');
+                    //                    $('#password').val('');
+                    //                    $(location).attr('index.jsp');
+                    //            }
+
+                    // Configure an On-Click Listener to Update the Form
+                    //  $('#register').click(function() {
+
+
+                    //Reference: http://runnable.com/UkmDoGPTV7wtAAja/how-to-use-jquery-validation-ajax-call-on-success
+                    submitHandler: function() {
+                        $.ajax({
+                            url: "./web/advertise",
+                            dataType: "json",
+                            contentType: 'application/json; charset=UTF-8',
+                            data: JSON.stringify({"name": $("#name").val(),
+                                "email": $("#email").val(),
+                                "password": $("#password").val()}),
+                            method: "post",
+                            success: function(data) {
+
+                                alert('Registration successful');                              
+                                $('#name').val('');
+                                $('#email').val('');
+                                $('#password').val('');
+                                $('#password2').val('');
+                                $('#result').html('Thank you For Registration');
+                                
+                            }
+                        });
+
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+        <form  id="register_form">
+
+            Name: <input id="name" name="name"></input>
+            Email: <input id="email" name="email"></input>
+            Password:  <input id="password" name="password"></input>
+            Re-Enter Password:  <input id="password2" name="password2"></input>
+            <button id="register" type="submit">Register</button>
+            
+            <div id="result"></div>
+
+        </form>
+
+    </body>
+</html>

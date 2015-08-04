@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Home Page</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-sanitize.min.js"></script>
+        <link rel="stylesheet" href="home.css">
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="jquery.validate.min.js"></script>
+
+
+
+        <script>
+//            $(document).ready(function() {
+//                //Reference: http://iviewsource.com/codingtutorials/getting-started-with-javascript-object-notation-json-for-absolute-beginners/
+//                $.getJSON('./web/advertise', function(data) {
+//                    var output = "<table> <tr> <th>Title</th> <th>Description</th> <th>Email</th> <th>Price</th> <th>Phone</th> <th>Location</th></tr>";
+//                    for (var i in data) {
+//                        output += "<tr><td>" + data[i].title + "</td><td>" + data[i].description + "</td><td> " + data[i].email + "</td><td>" + data[i].price + "</td><td>" + data[i].phone + "</td><td>" + data[i].location + "</td></tr>";
+//                    }
+//
+//                    output += "</table>";
+//                    document.getElementById("result").innerHTML = output;
+//                });
+//
+//            });
+        </script>
+    </head>
+    <body>
+        <header>
+
+            <img src="./image/logo.jpg" alt="OneClick" height="85" width= "85">
+            <h1>One Click</h1>
+            <h2> Easy to find </h2>
+
+            <nav>
+                <ul>
+                   <li><a class = "current" href = "index.html"> Home </a></li>
+                    <li><a href = "product.jsp">Product List</a></li>
+                    <li><a href="addProduct.jsp" name="add">Add Product</a></li>
+                    <li><a href="register.jsp" name="register">Register</a></li>
+                    <li><a href="login.jsp" name="login">Login</a></li>
+                    <li><a href="logout.jsp" name="logput">LogOut</a></li>
+
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <section>
+
+            <img src="./image/header-banner.jpg" alt="OneClick"  style="padding-left: 25px">
+           
+            <h1>Welcome to One Click World.</h1>
+            <h2> Please come in and stay awhile.</h2>
+            <p class ="space"> One click is free local classifieds site for selling anything from used cars to mobiles, furniture, laptops, clothing and more. If you want to buy something - here you will find interesting items, cheaper than in the store. </p>
+
+
+<!--            <div id="result"></div>-->
+            <!--        <table id="result" class="hidden">
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </table>-->
+        </section>
+        <footer>
+            <p>&#169; 2015 Manish Sharma</p>
+        </footer>
+    </body>
+</html>
