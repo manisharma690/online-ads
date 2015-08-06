@@ -17,8 +17,7 @@ import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
 
-/**
- *
+/*
  * @author c0653541
  */
 public class Connect {
