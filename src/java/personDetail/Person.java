@@ -10,9 +10,8 @@ import javax.faces.bean.ManagedBean;
 import javax.json.Json;
 import javax.json.JsonObject;
 
-/**
- *
- * @author c0633648
+/*
+ * @author c0653541
  */
 @Stateful
 public class Person {

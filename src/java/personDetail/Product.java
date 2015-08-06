@@ -11,8 +11,7 @@ import javax.ejb.Stateful;
 import javax.json.Json;
 import javax.json.JsonObject;
 
-/**
- *
+/*
  * @author c0653541
  */
 @Stateful
