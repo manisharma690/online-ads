@@ -3,7 +3,7 @@
 
 <!-- ---------------------
 Title: Term Project
-Name: Manish Sharma
+Name: Manish 
 ID: c0653541
 ---------------------- -->
 
