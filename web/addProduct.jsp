@@ -1,5 +1,5 @@
 <%-- 
-    Document   : addProduct
+    Document   : AddProduct
     Created on : July, 29 12:36:02 AM
     Author     : Manish Sharma
 --%>
