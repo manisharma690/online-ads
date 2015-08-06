@@ -34,8 +34,7 @@ import javax.ws.rs.core.Response;
 import personDetail.Person;
 import personDetail.Product;
 
-/**
- *
+/*
  * @author c0653541
  */
 @SessionScoped
@@ -61,7 +60,6 @@ public class Services implements Serializable {
 
         return Response.ok(getProducts("SELECT * FROM product WHERE productID=?", String.valueOf(id))).build();
 
-        // return Response.entity(getResult("SELECT * FROM product")).build();
     }
     
     @POST
@@ -156,9 +154,6 @@ public class Services implements Serializable {
                 product = new Product(json);
                 
                 result = Response.ok(product.toJSON()).build();
-//            }else{
-//                result = Response.status(404).build();
-//            }
         } catch (SQLException ex) {
             result = Response.status(500).entity(ex.getMessage()).build();
         }
