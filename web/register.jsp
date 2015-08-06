@@ -1,8 +1,3 @@
-<%-- 
-    Document   : register
-    Created on : 18-Apr-2015, 6:20:37 PM
-    Author     : c0633648
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
